@@ -73,9 +73,19 @@ hr {
   margin-bottom: 50px;
   position: relative;
 }
+@media (max-width: 1000px) {
+  .step {
+    margin: 20px 0;
+  }
+}
 img.screenshot {
   max-width: 400px;
   border-radius: 10px;
+}
+@media (max-width: 1000px) {
+  img.screenshot {
+    max-width: 100%;
+  }
 }
 a {
   color: #e9e8e8;
@@ -138,6 +148,7 @@ figure.feature {
 @media (max-width: 1000px) {
   figure.feature {
     width: 100%;
+    display: block;
   }
 }
 
@@ -162,4 +173,9 @@ figure.feature {
   display: inline-block;
   vertical-align: top;
   margin-bottom: 20px;
+}
+@media (max-width: 1000px) {
+  .feature__img {
+    margin-right: 0px;
+  }
 }
