@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  background: #222;
+  color: color(srgb 0.894 0.894 0.894);
+  font-weight: 200;
+  padding-top: 80px;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.h1 {
+  font-weight: 200;
+  font-size: 350%;
+}
+
+.h1 span,
+.h2 span,
+.h3 span {
+  font-weight: bold;
+}
+
+.h1 sup {
+  color: #fb323b;
+  font-size: 40%;
+}
+
+.h2 {
+  font-weight: 200;
+  font-size: 250%;
+}
+
+.h3 {
+  font-weight: 200;
+  font-size: 120%;
+  display: block;
+}
+
+hr {
+  display: inline-block;
+  opacity: 0.2;
+  margin-bottom: 80px;
+}
+
+.logo {
+  max-width: 250px;
+  display: block;
+  margin: 20px auto;
+}
+
+.steps,
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-items: center;
+  justify-content: center;
+}
+
+.step {
+  margin: 20px;
+  max-width: 400px;
+  display: inline-block;
+  margin-bottom: 50px;
+  position: relative;
+}
+img.screenshot {
+  max-width: 400px;
+  border-radius: 10px;
+}
+a {
+  color: color(srgb 0.894 0.894 0.894);
+  font-weight: bold;
+  transition: 0.5s;
+}
+a:hover {
+  color: #fb323b;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+code {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.btn {
+  border: 0px;
+  -webkit-appearance: none;
+  background: #444;
+  color: color(srgb 0.894 0.894 0.894);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 80%;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background: #fb323b;
+  transition: 0.5s;
+}
+
+.btn.is-active {
+  background: #fb323b;
+  transition: 0.5s;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-items: center;
+  justify-content: space-between;
+  align-content: stretch;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+figure.feature {
+  background: #18181c;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 1em;
+  display: flex;
+  align-items: flex-start;
+}
+
+@media (max-width: 1000px) {
+  figure.feature {
+    width: 100%;
+  }
+}
+
+.feature.feature--hero {
+  max-width: 100%;
+  flex-basis: 100%;
+}
+.feature__list {
+  padding-left: 20px;
+}
+.feature__list li {
+  margin-bottom: 10px;
+  margin-left: 0;
+}
+.feature__desc {
+  text-align: left;
+  display: inline-block;
+}
+.feature__img {
+  margin-right: 20px;
+  max-width: 100px;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 20px;
+}
