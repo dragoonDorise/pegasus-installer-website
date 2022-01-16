@@ -4,9 +4,9 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
   background: #222;
-  color: #fff;
   font-weight: 200;
   padding-top: 80px;
+  color: color(srgb 0.948 0.948 0.948);
 }
 
 .container {
@@ -78,7 +78,7 @@ img.screenshot {
   border-radius: 10px;
 }
 a {
-  color: #fff;
+  color: #e9e8e8;
   font-weight: bold;
   transition: 0.5s;
 }
@@ -97,7 +97,7 @@ code {
   border: 0px;
   -webkit-appearance: none;
   background: #444;
-  color: #fff;
+  color: #e9e8e8;
   padding: 10px;
   border-radius: 10px;
   font-size: 80%;

@@ -60,8 +60,8 @@
       <div class="steps">
         <div class="step">
           <img
-            class="screenshot"
-            src="img/unknown.gif"
+            class="screenshot lozad"
+            data-src="img/unknown.gif"
             alt="Activate APK install"
           />
 
@@ -72,8 +72,8 @@
         </div>
         <div class="step">
           <img
-            class="screenshot"
-            src="img/termux.png"
+            class="screenshot lozad"
+            data-src="img/termux.png"
             alt="Activate APK install"
           />
 
@@ -85,8 +85,8 @@
         </div>
         <div class="step">
           <img
-            class="screenshot"
-            src="img/script.png"
+            class="screenshot lozad"
+            data-src="img/script.png"
             alt="Activate APK install"
           />
 
@@ -116,9 +116,9 @@
       <div class="features">
         <figure class="feature">
           <img
-            class="feature__img"
+            class="feature__img lozad"
             width="100"
-            src="img/retroarch.png"
+            data-src="img/retroarch.png"
             alt="RetroArch"
           />
           <figcaption class="feature__desc">
@@ -134,7 +134,11 @@
           </figcaption>
         </figure>
         <figure class="feature">
-          <img class="feature__img" src="img/351elec.png" alt="RetroArch" />
+          <img
+            class="feature__img lozad"
+            data-src="img/351elec.png"
+            alt="RetroArch"
+          />
           <figcaption class="feature__desc">
             <span class="h3">351Elec <span>Hotkeys</span></span>
             <ul class="feature__list">
@@ -148,7 +152,11 @@
           </figcaption>
         </figure>
         <figure class="feature">
-          <img class="feature__img" src="img/retroarch.png" alt="RetroArch" />
+          <img
+            class="feature__img lozad"
+            data-src="img/retroarch.png"
+            alt="RetroArch"
+          />
           <figcaption class="feature__desc">
             <span class="h3">
               All your favorite <span>systems</span> out of the box
@@ -216,44 +224,44 @@
       <div class="steps">
         <div class="step">
           <img
-            class="screenshot"
-            src="img/1.png"
+            class="screenshot lozad"
+            data-src="img/1.png"
             alt="RP Switch Theme Screenshot"
           />
         </div>
         <div class="step">
           <img
-            class="screenshot"
-            src="img/2.png"
+            class="screenshot lozad"
+            data-src="img/2.png"
             alt="RP Switch Theme Screenshot"
           />
         </div>
         <div class="step">
           <img
-            class="screenshot"
-            src="img/3.png"
+            class="screenshot lozad"
+            data-src="img/3.png"
             alt="RP Switch Theme Screenshot"
           />
         </div>
         <div class="step">
           <img
-            class="screenshot"
-            src="img/4.png"
+            class="screenshot lozad"
+            data-src="img/4.png"
             alt="RP Epic Noir Theme Screenshot"
           />
         </div>
 
         <div class="step">
           <img
-            class="screenshot"
-            src="img/5.png"
+            class="screenshot lozad"
+            data-src="img/5.png"
             alt="RP Epic Noir Theme Screenshot"
           />
         </div>
         <div class="step">
           <img
-            class="screenshot"
-            src="img/6.png"
+            class="screenshot lozad"
+            data-src="img/6.png"
             alt="RP Epic Noir Theme Screenshot"
           />
         </div>
@@ -264,21 +272,21 @@
       <div class="steps">
         <div class="step">
           <img
-            class="screenshot"
-            src="img/7.png"
+            class="screenshot lozad"
+            data-src="img/7.png"
             alt="RP Epic Noir Theme Screenshot for Retroid Pocket 2"
           />
         </div>
         <div class="step">
           <img
-            class="screenshot"
-            src="img/8.png"
+            class="screenshot lozad"
+            data-src="img/8.png"
             alt="RP Epic Noir Theme Screenshot for Retroid Pocket 2"
           />
         </div>
         <div class="step">
           <img
-            class="screenshot"
+            class="screenshot lozad"
             src="https://raw.githubusercontent.com/dragoonDorise/RP-Switch/main/screenshots/home.jpg"
             alt="RP Switch Theme Screenshot for Retroid Pocket 2"
           />
@@ -287,7 +295,11 @@
     </section>
     <hr class="container" />
     <section class="container">
-      <img src="img/logo-700.png" alt="Pegasus Frontend" class="logo" />
+      <img
+        data-src="img/logo-700.png"
+        alt="Pegasus Frontend"
+        class="logo lozad"
+      />
       <small>
         We're not afiliated in any way with Pegasus Frontend, this is a fan
         project made out of love for Pegasus
@@ -295,5 +307,9 @@
     </section>
 
     <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js"></script>
+    <script>
+      lozad().observe();
+    </script>
   </body>
 </html>
