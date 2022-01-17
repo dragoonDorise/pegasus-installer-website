@@ -44,7 +44,7 @@
   </head>
 
   <body>
-    <section class="container container--hero">
+    <header class="container container--hero">
       <h1 class="h1">
         Welcome to <span>Pegasus installer!</span><sup>(Beta)</sup>
       </h1>
@@ -55,256 +55,276 @@
         This guide will help you install, configure Pegasus Frontend and scrap
         your roms artwork all without leaving your Android Handheld.
       </p>
-    </section>
-    <section class="container">
-      <div class="steps">
-        <div class="step">
-          <img
-            class="screenshot lozad"
-            data-src="img/unknown.gif"
-            alt="Activate APK install"
-          />
+    </header>
+    <main>
+      <section class="container">
+        <div class="steps">
+          <div class="step">
+            <img
+              class="screenshot lozad"
+              data-src="img/unknown.gif"
+              alt="Activate APK install"
+            />
 
-          <p>
-            Enable installing APK,in your Android device on Settings → Security
-            → Unknown Sources so we can install Pegasus
-          </p>
-        </div>
-        <div class="step">
-          <img
-            class="screenshot lozad"
-            data-src="img/termux.png"
-            alt="Activate APK install"
-          />
-
-          <p>
-            Download and install Termux on your Android Device from this
-            <a href="https://f-droid.org/repo/com.termux_117.apk">link</a> so we
-            can run all the automation scripts.
-          </p>
-        </div>
-        <div class="step">
-          <img
-            class="screenshot lozad"
-            data-src="img/script.png"
-            alt="Activate APK install"
-          />
-
-          <p>
-            Copy and paste the folowing script onto Termux and press the
-            <strong>A button / Enter</strong>
-          </p>
-          <code id="sh-setup"
-            >/bin/bash -c "$(curl -fsSL https://bit.ly/3ntlzL8)"</code
-          >
-          <button class="btn" id="copy-clip" type="button">
-            Copy code to clipboard
-          </button>
-        </div>
-      </div>
-    </section>
-    <hr class="container" />
-    <section class="container">
-      <h1 class="h2"><span>Automatic</span> configuration</h1>
-      <p>
-        Learn all the stuff we are doing in the background for you while you
-        install the script
-      </p>
-    </section>
-
-    <section class="container">
-      <div class="features">
-        <figure class="feature">
-          <img
-            class="feature__img lozad"
-            width="100"
-            data-src="img/retroarch.png"
-            alt="RetroArch"
-          />
-          <figcaption class="feature__desc">
-            <span class="h3"><span>RetroArch</span> Configuration</span>
-            <ul class="feature__list">
-              <li>Aspect ratio (1:1) for Handhelds & Mame Systems</li>
-              <li>Aspect ratios (4:3 and 8:3 )for SNES and NES</li>
-              <li>LCD3 Shader for all Handhelds and Mame</li>
-              <li>Hide notifications like the load content splash screen</li>
-              <li>AutoSave and AutoLoad State</li>
-              <li>Game Bezels for 16:9 and 5:3 systems</li>
-            </ul>
-          </figcaption>
-        </figure>
-        <figure class="feature">
-          <img
-            class="feature__img lozad"
-            data-src="img/351elec.png"
-            alt="RetroArch"
-          />
-          <figcaption class="feature__desc">
-            <span class="h3">351Elec <span>Hotkeys</span></span>
-            <ul class="feature__list">
-              <li><strong>L1 + R1</strong> RetroArch menu</li>
-              <li><strong>Select + Start (x2)</strong> Quit RetroArch</li>
-              <li><strong>Select + A</strong> Pause emulation</li>
-              <li><strong>Select + R2</strong> Fast-forward</li>
-              <li><strong>Select + L1</strong> Load save state</li>
-              <li><strong>Select + R1</strong> Save state</li>
-            </ul>
-          </figcaption>
-        </figure>
-        <figure class="feature">
-          <img
-            class="feature__img lozad"
-            data-src="img/retroarch.png"
-            alt="RetroArch"
-          />
-          <figcaption class="feature__desc">
-            <span class="h3">
-              All your favorite <span>systems</span> out of the box
-            </span>
             <p>
-              All Pegasus metadata already configured, just plug & play. No
-              tinkering needed
+              Enable installing APK,in your Android device on Settings →
+              Security → Unknown Sources so we can install Pegasus
             </p>
-            <ul class="feature__list">
-              <li><strong>Classic PC:</strong> Doom, ScummVM, etc</li>
-              <li><strong>16 Bit:</strong> SNES, Genesis, etc.</li>
-              <li>
-                <strong>Handhelds:</strong> Gameboy, Neo Geo Pocket, GameGear,
-                etc.
-              </li>
-              <li>
-                <strong>32 Bits:</strong> Gamecube, Dreamcast, Playstation, etc.
-              </li>
-              <li><strong>Modern systems:</strong> Wii, Playstation 2, etc.</li>
-            </ul>
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-    <hr class="container" />
-    <section class="container">
-      <h1 class="h2">Artwork scraped <span>on device</span></h1>
-      <p>
-        Forget about inserting your SD Card to your PC everytime you download a
-        ROM.
-      </p>
-      <div class="steps">
-        <div class="step">
-          <img
-            class="screenshot"
-            src="https://raw.githubusercontent.com/dragoonDorise/RP-Switch/main/screenshots/games3.jpg"
-            alt="Activate APK install"
-          />
+          </div>
+          <div class="step">
+            <img
+              class="screenshot lozad"
+              data-src="img/termux.png"
+              alt="Activate APK install"
+            />
+
+            <p>
+              Download and install Termux on your Android Device from this
+              <a class="link" href="https://f-droid.org/repo/com.termux_117.apk"
+                >link</a
+              >
+              so we can run all the automation scripts.
+            </p>
+          </div>
+          <div class="step">
+            <img
+              class="screenshot lozad"
+              data-src="img/script.png"
+              alt="Activate APK install"
+            />
+
+            <p>
+              Copy and paste the folowing script onto Termux and press the
+              <strong>A button / Enter</strong>
+            </p>
+            <code id="sh-setup"
+              >/bin/bash -c "$(curl -fsSL https://bit.ly/3ntlzL8)"</code
+            >
+            <button class="btn" id="copy-clip" type="button">
+              Copy code to clipboard
+            </button>
+          </div>
         </div>
-        <div class="step">
-          <img
-            class="screenshot"
-            src="https://raw.githubusercontent.com/dragoonDorise/RP-Switch/main/screenshots/games4.jpg"
-            alt="Activate APK install"
-          />
+      </section>
+      <hr class="container" />
+      <section class="container">
+        <h1 class="h2"><span>Automatic</span> configuration</h1>
+        <p class="lead">
+          Learn all the stuff we are doing in the background for you while you
+          install the script
+        </p>
+        <div class="features">
+          <figure class="feature">
+            <img
+              class="feature__img lozad"
+              width="100"
+              data-src="img/retroarch.png"
+              alt="RetroArch"
+            />
+            <figcaption class="feature__desc">
+              <span class="h3"><span>RetroArch</span> Configuration</span>
+              <ul class="feature__list">
+                <li>Aspect ratio (1:1) for Handhelds & Mame Systems</li>
+                <li>Aspect ratios (4:3 and 8:3 )for SNES and NES</li>
+                <li>LCD3 Shader for all Handhelds and Mame</li>
+                <li>Hide notifications like the load content splash screen</li>
+                <li>AutoSave and AutoLoad State</li>
+                <li>Game Bezels for 16:9 and 5:3 systems</li>
+              </ul>
+            </figcaption>
+          </figure>
+          <figure class="feature">
+            <img
+              class="feature__img lozad"
+              data-src="img/351elec.png"
+              alt="RetroArch"
+            />
+            <figcaption class="feature__desc">
+              <span class="h3">351Elec <span>Hotkeys</span></span>
+              <ul class="feature__list">
+                <li><strong>L1 + R1</strong> RetroArch menu</li>
+                <li><strong>Select + Start (x2)</strong> Quit RetroArch</li>
+                <li><strong>Select + A</strong> Pause emulation</li>
+                <li><strong>Select + R2</strong> Fast-forward</li>
+                <li><strong>Select + L1</strong> Load save state</li>
+                <li><strong>Select + R1</strong> Save state</li>
+              </ul>
+            </figcaption>
+          </figure>
+          <figure class="feature">
+            <img
+              class="feature__img lozad"
+              data-src="img/retroarch.png"
+              alt="RetroArch"
+            />
+            <figcaption class="feature__desc">
+              <span class="h3">
+                All your favorite <span>systems</span> out of the box
+              </span>
+              <p>
+                All Pegasus metadata already configured, just plug & play. No
+                tinkering needed
+              </p>
+              <ul class="feature__list">
+                <li><strong>Classic PC:</strong> Doom, ScummVM, etc</li>
+                <li><strong>16 Bit:</strong> SNES, Genesis, etc.</li>
+                <li>
+                  <strong>Handhelds:</strong> Gameboy, Neo Geo Pocket, GameGear,
+                  etc.
+                </li>
+                <li>
+                  <strong>32 Bits:</strong> Gamecube, Dreamcast, Playstation,
+                  etc.
+                </li>
+                <li>
+                  <strong>Modern systems:</strong> Wii, Playstation 2, etc.
+                </li>
+              </ul>
+            </figcaption>
+          </figure>
         </div>
-        <div class="step">
-          <img
-            class="screenshot"
-            src="https://raw.githubusercontent.com/dragoonDorise/RP-RG351/main/screenshots/games.jpg"
-            alt="Activate APK install"
-          />
+      </section>
+      <hr class="container" />
+      <section class="container">
+        <h1 class="h2">Artwork scraped <span>on device</span></h1>
+        <p class="lead">
+          Forget about inserting your SD Card to your PC everytime you download
+          a ROM.
+        </p>
+        <div class="steps">
+          <div class="step">
+            <img
+              class="screenshot"
+              src="https://raw.githubusercontent.com/dragoonDorise/RP-Switch/main/screenshots/games3.jpg"
+              alt="Activate APK install"
+            />
+          </div>
+          <div class="step">
+            <img
+              class="screenshot"
+              src="https://raw.githubusercontent.com/dragoonDorise/RP-Switch/main/screenshots/games4.jpg"
+              alt="Activate APK install"
+            />
+          </div>
+          <div class="step">
+            <img
+              class="screenshot"
+              src="https://raw.githubusercontent.com/dragoonDorise/RP-RG351/main/screenshots/games.jpg"
+              alt="Activate APK install"
+            />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <hr class="container" />
+      <section class="container">
+        <h1 class="h2">Bundled <span>Themes</span></h1>
+        <p class="lead">
+          Showcase your games with the bundled themes. Optimized for systems
+          like AYN Odin, Anbernic RG552 or Retroid Pocket 2
+        </p>
+
+        <div class="steps">
+          <div class="step">
+            <img
+              class="screenshot lozad"
+              data-src="img/1.png"
+              alt="RP Switch Theme Screenshot"
+            />
+          </div>
+          <div class="step">
+            <img
+              class="screenshot lozad"
+              data-src="img/2.png"
+              alt="RP Switch Theme Screenshot"
+            />
+          </div>
+          <div class="step">
+            <img
+              class="screenshot lozad"
+              data-src="img/3.png"
+              alt="RP Switch Theme Screenshot"
+            />
+          </div>
+          <div class="step">
+            <img
+              class="screenshot lozad"
+              data-src="img/4.png"
+              alt="RP Epic Noir Theme Screenshot"
+            />
+          </div>
+
+          <div class="step">
+            <img
+              class="screenshot lozad"
+              data-src="img/5.png"
+              alt="RP Epic Noir Theme Screenshot"
+            />
+          </div>
+          <div class="step">
+            <img
+              class="screenshot lozad"
+              data-src="img/6.png"
+              alt="RP Epic Noir Theme Screenshot"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <h1 class="h3"><span>Retroid Pocket 2 </span>Optimized:</h1>
+        <div class="steps">
+          <div class="step">
+            <img
+              class="screenshot lozad"
+              data-src="img/7.png"
+              alt="RP Epic Noir Theme Screenshot for Retroid Pocket 2"
+            />
+          </div>
+          <div class="step">
+            <img
+              class="screenshot lozad"
+              data-src="img/8.png"
+              alt="RP Epic Noir Theme Screenshot for Retroid Pocket 2"
+            />
+          </div>
+          <div class="step">
+            <img
+              class="screenshot lozad"
+              src="https://raw.githubusercontent.com/dragoonDorise/RP-Switch/main/screenshots/home.jpg"
+              alt="RP Switch Theme Screenshot for Retroid Pocket 2"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
 
     <hr class="container" />
-    <section class="container">
-      <h1 class="h2">Bundled <span>Themes</span></h1>
-      <p>
-        Showcase your games with the bundled themes. Optimized for systems like
-        AYN Odin, Anbernic RG552 or Retroid Pocket 2
-      </p>
-
-      <div class="steps">
-        <div class="step">
-          <img
-            class="screenshot lozad"
-            data-src="img/1.png"
-            alt="RP Switch Theme Screenshot"
-          />
-        </div>
-        <div class="step">
-          <img
-            class="screenshot lozad"
-            data-src="img/2.png"
-            alt="RP Switch Theme Screenshot"
-          />
-        </div>
-        <div class="step">
-          <img
-            class="screenshot lozad"
-            data-src="img/3.png"
-            alt="RP Switch Theme Screenshot"
-          />
-        </div>
-        <div class="step">
-          <img
-            class="screenshot lozad"
-            data-src="img/4.png"
-            alt="RP Epic Noir Theme Screenshot"
-          />
-        </div>
-
-        <div class="step">
-          <img
-            class="screenshot lozad"
-            data-src="img/5.png"
-            alt="RP Epic Noir Theme Screenshot"
-          />
-        </div>
-        <div class="step">
-          <img
-            class="screenshot lozad"
-            data-src="img/6.png"
-            alt="RP Epic Noir Theme Screenshot"
-          />
-        </div>
-      </div>
-    </section>
-    <section class="container">
-      <h1 class="h3"><span>Retroid Pocket 2 </span>Optimized:</h1>
-      <div class="steps">
-        <div class="step">
-          <img
-            class="screenshot lozad"
-            data-src="img/7.png"
-            alt="RP Epic Noir Theme Screenshot for Retroid Pocket 2"
-          />
-        </div>
-        <div class="step">
-          <img
-            class="screenshot lozad"
-            data-src="img/8.png"
-            alt="RP Epic Noir Theme Screenshot for Retroid Pocket 2"
-          />
-        </div>
-        <div class="step">
-          <img
-            class="screenshot lozad"
-            src="https://raw.githubusercontent.com/dragoonDorise/RP-Switch/main/screenshots/home.jpg"
-            alt="RP Switch Theme Screenshot for Retroid Pocket 2"
-          />
-        </div>
-      </div>
-    </section>
-    <hr class="container" />
-    <section class="container">
-      <img
-        data-src="img/logo-700.png"
-        alt="Pegasus Frontend"
-        class="logo lozad"
-      />
+    <footer class="container">
+      <a href="https://www.pegasus-frontend.com" target="_blank"
+        ><img
+          data-src="img/logo-700.png"
+          alt="Pegasus Frontend"
+          class="logo lozad"
+        />
+      </a>
       <small>
         We're not afiliated in any way with Pegasus Frontend, this is a fan
         project made out of love for Pegasus
       </small>
-    </section>
+      <p>
+        <a class="link link--2" href="https://tinyurl.com/RG552GameSettings"
+          >RG552 Compatibility List
+        </a>
+        |
+        <a class="link link--2" href="https://tinyurl.com/RP2PlusGameSettings"
+          >Retroid Pocket 2+ Compatibility List
+        </a>
+        |
+        <a class="link link--2" href="https://tinyurl.com/X18SGameSettings"
+          >Powkiddy X18S Compatibility List
+        </a>
+      </p>
+    </footer>
 
     <script src="js/scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js"></script>
