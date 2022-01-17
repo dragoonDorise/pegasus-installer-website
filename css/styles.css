@@ -46,8 +46,9 @@ body {
 }
 
 hr {
-  display: inline-block;
+  display: block;
   opacity: 0.2;
+  margin: 0 auto;
   margin-bottom: 80px;
 }
 
@@ -63,23 +64,24 @@ hr {
   flex-wrap: wrap;
   align-items: start;
   justify-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .step {
-  margin: 20px;
-  max-width: 400px;
+  max-width: 30%;
   display: inline-block;
   margin-bottom: 50px;
   position: relative;
 }
 @media (max-width: 1000px) {
   .step {
+    max-width: 100%;
+    width: 100%;
     margin: 20px 0;
   }
 }
 img.screenshot {
-  max-width: 400px;
+  max-width: 100%;
   border-radius: 10px;
 }
 @media (max-width: 1000px) {
