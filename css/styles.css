@@ -119,6 +119,11 @@ hr {
     margin: 20px 0;
   }
 }
+
+.step--100 {
+  max-width: 100%;
+}
+
 img.screenshot {
   max-width: 100%;
   border-radius: 10px;
@@ -225,4 +230,10 @@ figure.feature {
   .feature__img {
     margin-right: 0px;
   }
+}
+
+.guide {
+  max-width: 50%;
+  text-align: left;
+  margin: 0 auto;
 }
