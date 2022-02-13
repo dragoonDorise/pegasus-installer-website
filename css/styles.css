@@ -237,3 +237,9 @@ figure.feature {
   text-align: left;
   margin: 0 auto;
 }
+
+@media (max-width: 1000px) {
+  .guide {
+    max-width: 100%;
+  }
+}
