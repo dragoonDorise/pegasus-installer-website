@@ -25,22 +25,22 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Pegasus Installer</title>
+    <title>EmuDeck for Android</title>
     <meta
       name="description"
-      content="Easy to use Pegasus installer for Android"
+      content="Easy to use EmuDeck for Android for Android"
     />
     <meta name="author" content="dragoonDorise" />
 
     <meta
       property="og:title"
-      content="Easy to use Pegasus installer for Android"
+      content="Easy to use EmuDeck for Android for Android"
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.pegasus-installer.com" />
     <meta
       property="og:description"
-      content="Easy to use Pegasus installer for Android"
+      content="Easy to use EmuDeck for Android for Android"
     />
     <meta property="og:image" content="img/logo-700.png" />
 
@@ -53,7 +53,7 @@
   <body>
     <header class="container container--hero">
       <h1 class="h1">
-        Welcome to <span>Pegasus installer!</span><sup>(Beta)</sup>
+        Welcome to <br/><span>EmuDeck for Android!</span><sup>(Beta)</sup>
       </h1>
 
       <div class="hero">
@@ -65,9 +65,7 @@
         An <i>almost</i> one touch configurator for Android Handhelds
       </h2>
       <p>
-        This guide will help you install your emulators, configure Pegasus
-        Frontend and scrap your roms artwork all without leaving your Android
-        Handheld.
+        This guide will help you install your emulators, Frontends like Pegasus, DIG or Daijishō all without leaving your Android Handheld.
       </p>
       <p>
         Please consider supporting my work by becoming a
@@ -78,28 +76,10 @@
           >Patreon
         </a>
       </p>
-      <p>
-        <span class="h3"
-          >The script is only compatible with devices running Android 10 or
-          earlier. We are working on a new version so stay tuned!</span
-        >
-      </p>
     </header>
     <main>
       <section class="container">
-        <div class="steps">
-          <div class="step">
-            <img
-              class="screenshot lozad"
-              data-src="img/unknown.gif"
-              alt="Activate APK install"
-            />
-
-            <p>
-              Enable installing APK in your Android device on Settings →
-              Security → Unknown Sources so we can install Pegasus
-            </p>
-          </div>
+        <div class="steps steps--two">
           <div class="step">
             <img
               class="screenshot lozad"
@@ -118,16 +98,16 @@
           <div class="step">
             <img
               class="screenshot lozad"
-              data-src="img/script.png"
+              data-src="img/grid.png"
               alt="Activate APK install"
             />
 
             <p>
-              Copy and paste the folowing script onto Termux and press the
+              Copy and paste the following script onto Termux and press the
               <strong>A button / Enter</strong>
             </p>
             <code id="sh-setup"
-              >/bin/bash -c "$(curl -fsSL https://bit.ly/3ntlzL8)"</code
+              >/bin/bash -c "$(curl -fsSL https://bit.ly/EmuDeckAndroid)"</code
             >
             <button class="btn" id="copy-clip" type="button">
               Copy code to clipboard
@@ -135,8 +115,8 @@
           </div>
         </div>
       </section>
-      <hr class="container" />
-      <section class="container">
+      
+      <section class="container inverted">
         <h1 class="h2"><span>Automatic</span> configuration</h1>
         <p class="lead">
           No more tinkering with settings, we take care of everything! Just take
@@ -191,10 +171,6 @@
               <span class="h3">
                 All your favorite <span>systems</span> out of the box
               </span>
-              <p>
-                All Pegasus metadata already configured, just plug & play. No
-                tinkering needed
-              </p>
               <ul class="feature__list">
                 <li>
                   <strong>Classic PC - Retroarch</strong> Doom, ScummVM, etc
@@ -217,7 +193,7 @@
           </figure>
         </div>
       </section>
-      <hr class="container" />
+      
       <section class="container">
         <h1 class="h2">Artwork scraped <span>on device</span></h1>
         <p class="lead">
@@ -249,8 +225,8 @@
         </div>
       </section>
 
-      <hr class="container" />
-      <section class="container">
+      
+      <section class="container dark">
         <h1 class="h2">Bezels <span>for every system</span></h1>
         <p class="lead">
           You can use bezels for al 4:3 games. Or not, it's completely
@@ -316,7 +292,7 @@
         </div>
       </section>
 
-      <hr class="container" />
+      
       <section class="container">
         <h1 class="h2">Bundled <span>Themes</span></h1>
         <p class="lead">
@@ -438,8 +414,8 @@
         </div>
       </section>
     </main>
-    <hr class="container" />
-    <section class="container">
+    
+    <section class="container dark">
       <h1 class="h2"><span>Step by step</span> guide</h1>
       <p class="lead">
         Follow this guide if you are having problems using the installer
@@ -571,29 +547,11 @@
             alt="Activate APK install"
           />
         </div>
-        <p>
-          As soon as the download has been completed you'll see the Pegasus
-          Logo. Now Pegasus will be installed
-        </p>
 
-        <div class="step step--100">
-          <img
-            class="screenshot"
-            src="img/ss/Screenshot_20220211-230330.png"
-            alt="Activate APK install"
-          />
-        </div>
-        <p>Install Pegasus and select Done when the installer finishes</p>
-        <div class="step step--100">
-          <img
-            class="screenshot"
-            src="img/ss/Screenshot_20220211-230340.png"
-            alt="Activate APK install"
-          />
-        </div>
+        
         <p>
           Chose where you want to store your roms. This cannot be changed unless
-          you reinstall Pegasus Installer so chose wisely
+          you reinstall EmuDeck for Android so chose wisely
         </p>
 
         <div class="step step--100">
@@ -656,8 +614,7 @@
         <p>
           <strong
             >You need to copy/move your roms to that specific folder. You can't
-            use your existing roms folders. If you don't copy your roms there
-            then your games wont appear on Pegasus</strong
+            use your existing roms folders. You can then later point your Frontend of choice</strong
           >
         </p>
 
@@ -690,9 +647,11 @@
           />
         </div>
 
+        <h2 class="h3">Getting artwork for Pegasus Frontend</h2>
+
         <p>
-          Now you can exit the installer and play your games but you should
-          scrap your roms so Pegasus shows artwork for all your games
+          If you've choosed Pegasus as your frontend you need to
+          scrap your roms so Pegasus shows artwork for all your games, since Pegasus does not have a built in rom scraper
         </p>
 
         <div class="step step--100">
@@ -814,19 +773,10 @@
       </div>
     </section>
 
-    <hr class="container" />
+    
     <footer class="container">
-      <a href="https://www.pegasus-frontend.com" target="_blank"
-        ><img
-          data-src="img/logo-700.png"
-          alt="Pegasus Frontend"
-          class="logo lozad"
-        />
-      </a>
-      <small>
-        We're not afiliated in any way with Pegasus Frontend, this is a fan
-        project made out of love for Pegasus
-      </small>
+
+
       <p>
         <a
           class="link link--2"

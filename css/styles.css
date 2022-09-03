@@ -1,12 +1,84 @@
+@keyframes background {
+  0% {
+    background-color: #f99;
+  }
+  33% {
+    background-color: #5bf;
+  }
+  67% {
+    background-color: #99f;
+  }
+  100% {
+    background-color: #f99;
+  }
+}
+
+@font-face {
+  font-family: "Motiva Sans";
+  src: url(fonts/MotivaSans-Regular.ttf?v=4.015) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Motiva Sans";
+  src: url(fonts/MotivaSans-Light.ttf?v=4.015) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Motiva Sans";
+  src: url(fonts/MotivaSans-Thin.ttf?v=4.015) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Motiva Sans";
+  src: url(fonts/MotivaSans-Medium.ttf?v=4.015) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Motiva Sans";
+  src: url(fonts/MotivaSans-Bold.ttf?v=4.015) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Motiva Sans";
+  src: url(fonts/MotivaSans-RegularItalic.ttf?v=4.015) format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Motiva Sans";
+  src: url(fonts/MotivaSans-LightItalic.ttf?v=4.015) format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Motiva Sans";
+  src: url(fonts/MotivaSans-BoldItalic.ttf?v=4.015) format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Motiva Sans";
+  src: url(fonts/MotivaSans-Black.ttf?v=4.015) format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-  background: #222;
-  font-weight: 200;
+  font-family: "Motiva Sans";
+  animation: background 15s infinite;
+  font-weight: 500;
   padding-top: 80px;
   color: #f3f3f3;
+  margin: 0;
+  
 }
 @media (max-width: 1000px) {
   body {
@@ -34,7 +106,7 @@ p.lead {
   }
 }
 .h1 {
-  font-weight: 200;
+  font-weight: 500;
   font-size: 350%;
 }
 
@@ -45,17 +117,17 @@ p.lead {
 }
 
 .h1 sup {
-  color: #fb323b;
+  
   font-size: 40%;
 }
 
 .h2 {
-  font-weight: 200;
+  font-weight: bold;
   font-size: 250%;
 }
 
 .h3 {
-  font-weight: 200;
+  font-weight: 500;
   font-size: 120%;
   display: block;
 }
@@ -104,6 +176,14 @@ hr {
   align-items: start;
   justify-items: center;
   justify-content: space-between;
+}
+
+.steps--two{
+  justify-content: space-evenly;
+}
+
+.steps--two .step{
+  
 }
 
 .step {
@@ -242,4 +322,24 @@ figure.feature {
   .guide {
     max-width: 100%;
   }
+}
+
+
+.inverted{
+  padding-top: 50px;
+  background:white;
+}
+  .inverted .h2,
+  .inverted p{
+  color: #444
+}
+
+
+.dark{
+  padding-top: 50px;
+  background:#1b1b1b;
+}
+  .dark .h2,
+  .dark p{
+  color: white
 }
