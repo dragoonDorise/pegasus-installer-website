@@ -75,15 +75,12 @@ body {
   font-family: "Motiva Sans";
   animation: background 15s infinite;
   font-weight: 500;
-  padding-top: 80px;
   color: #f3f3f3;
   margin: 0;
   
 }
-@media (max-width: 1000px) {
-  body {
-    padding-top: 40px;
-  }
+a, a:visited{
+  text-decoration: none;
 }
 p.lead {
   margin-bottom: 80px;
@@ -343,3 +340,83 @@ figure.feature {
   .dark p{
   color: white
 }
+.header {
+  background: #000;
+  padding: 20px;
+  position: sticky;
+  z-index: 9;
+  top: 0;
+  display: inline-block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 9999;
+}
+      button,
+header a button,
+header a span {
+  border: 1px solid transparent;
+}
+      header a {
+  margin: 0 4px;
+  z-index: 9;
+  position: relative;
+  font-size: 0.9em;
+  line-height: inherit;
+  border-radius: 1.4em;
+}
+      header a button,
+header a span {
+  transition-property: background-color, border, color, box-shadow;
+  transition-duration: 0.2s;
+}
+.header a {
+  color: #fff;
+  transition: 0.5s;
+}
+.header a:hover {
+  animation: background-text 15s infinite;
+}
+.header h2,
+.header h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.gridrow {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 5.75vw;
+}
+@media (min-width: 1280px) {
+  .gridrow {
+    gap: calc(1280px * 0.0575);
+  }
+}
+
+.col_3{
+  flex-basis: 20.686%;
+}
+
+
+.header-links {
+display: flex;
+justify-content: space-around;
+align-items: center;}
+      @media screen and (max-width: 767px) {
+        .gridrow{
+          display: block;
+        }
+  .header-links {
+    margin-top: 10px;
+    display: block;
+  }
+  .header-links a {
+    margin: 0;
+    margin-right: 10px;
+  }
+}
+
+.col_9 {
+flex-basis: 73.558%;}

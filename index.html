@@ -5,13 +5,13 @@
     <script
       id="Cookiebot"
       src="https://consent.cookiebot.com/uc.js"
-      data-cbid="6c8c0804-cb6e-4e0e-bec9-82f260f3d24c"
+      data-cbid="ddfc8a52-5576-45b1-8596-d1b37e9eb4d9"
       data-blockingmode="auto"
       type="text/javascript"
     ></script>
     <script
       async
-      src="https://www.googletagmanager.com/gtag/js?id=G-6EQNT02VP0"
+      src="https://www.googletagmanager.com/gtag/js?id=G-0W02EF26KV"
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -51,7 +51,21 @@
   </head>
 
   <body>
-    <header class="container container--hero">
+    <header class="header">
+      <div class="content gridrow">
+        <div class="col_3">
+          <a href="/"><img src="img/logo.png" alt="EmuDeck" width="140" /></a>
+        </div>
+        <div class="col_9 header-links">
+          <a href="#download">Download</a>
+          <a href="#how_to_install">Installation Guide</a>                    
+          <a target="_blank" href="cookies.html">Cookie Policy</a>
+          <a href="https://www.emudeck.com">EmuDeck for SteamOS</a>
+        </div>
+      </div>
+    </header>
+    
+    <section  class="container">
       <h1 class="h1">
         Welcome to <br/><span>EmuDeck for Android!</span><sup>(Beta)</sup>
       </h1>
@@ -61,23 +75,27 @@
         <video src="showcase.mp4" autoplay muted loop></video>
       </div>
 
-      <h2 class="h2">
-        An <i>almost</i> one touch configurator for Android Handhelds
-      </h2>
-      <p>
-        This guide will help you install your emulators, Frontends like Pegasus, DIG or Daijishō all without leaving your Android Handheld.
+     
       </p>
-      <p>
-        Please consider supporting my work by becoming a
-        <a
-          class="link"
-          target="_blank"
-          href="https://www.patreon.com/dragoonDorise"
-          >Patreon
-        </a>
-      </p>
-    </header>
-    <main>
+    </section>
+    <main  id="download">
+      <section class="container">
+        <h2 class="h2">
+          An <i>almost</i> one touch configurator for Android Handhelds
+        </h2>
+        <p>
+          This guide will help you install your emulators, Frontends like Pegasus, DIG or Daijishō all without leaving your Android Handheld.
+        </p>
+        <p>
+          Please consider supporting my work by becoming a
+          <a
+            class="link"
+            target="_blank"
+            href="https://www.patreon.com/dragoonDorise"
+            >Patreon
+          </a>
+        </p>
+      </section>
       <section class="container">
         <div class="steps steps--two">
           <div class="step">
@@ -415,7 +433,7 @@
       </section>
     </main>
     
-    <section class="container dark">
+    <section class="container dark" id="how_to_install">
       <h1 class="h2"><span>Step by step</span> guide</h1>
       <p class="lead">
         Follow this guide if you are having problems using the installer
